@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="SCRIPTORIA is a contemporary Arabic calligraphy art studio offering handcrafted calligraphy art, statement canvases, and custom commissions."
+    />
+    <title>SCRIPTORIA 🖤 | Contemporary Arabic Calligraphy Art</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand-mark" href="#home" aria-label="SCRIPTORIA home">
+          <span class="brand-word">SCRIPTORIA</span>
+          <span class="brand-heart" aria-hidden="true">🖤</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#shop">Shop</a>
+          <a href="#commissions">Commission</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="bag-button" id="bagButton" type="button" aria-label="Shopping bag">
+          <span>Bag</span>
+          <span class="bag-pill" id="cartBadge">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow">Contemporary handcrafted Arabic calligraphy</p>
+            <h1>
+              <span class="brand-word">SCRIPTORIA</span>
+              <span class="brand-heart" aria-hidden="true">🖤</span>
+            </h1>
+            <p class="tagline">Calligraphy with meaning.</p>
+            <p class="lede">
+              Thoughtful Arabic calligraphy art for homes, studios, and meaningful spaces.
+              Each piece is shaped by contemporary expression, layered symbolism, and a modern visual rhythm.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-btn" href="#shop">Shop the collection</a>
+              <a class="secondary-btn" href="#commissions">Request a custom piece</a>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Featured art and gallery composition">
+            <div class="feature-card feature-card-large">
+              <div class="card-art palette-blue">
+                <span class="art-note">Artwork upload pending</span>
+              </div>
+            </div>
+            <div class="feature-card feature-card-small">
+              <div class="card-art palette-stone">
+                <span class="art-note">Custom commissions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalogue" id="shop">
+        <div class="container section-heading">
+          <div>
+            <p class="eyebrow">Selected works</p>
+            <h2>Shop the collection</h2>
+          </div>
+          <a class="inline-link" href="#contact">Need a custom commission?</a>
+        </div>
+        <div class="container product-grid" id="productGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="order-strip" id="order-strip">
+        <div class="container order-strip-inner">
+          <p>Delivery, availability, and payment details are confirmed after order review.</p>
+        </div>
+      </section>
+
+      <section class="commission-section" id="commissions">
+        <div class="container commission-layout">
+          <div>
+            <p class="eyebrow">Commission studio</p>
+            <h2>Commission a piece with personal meaning.</h2>
+            <p>
+              Share your idea, preferred palette, dimensions, and the message you want translated into calligraphy.
+              We will respond with next steps and availability.
+            </p>
+          </div>
+
+          <form class="commission-form" id="commissionForm">
+            <div class="form-row">
+              <label>
+                Full name
+                <input type="text" name="commissionName" placeholder="Your name" required />
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                Email or WhatsApp
+                <input type="text" name="commissionContact" placeholder="Email or WhatsApp number" required />
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                Project details
+                <textarea
+                  name="commissionDetails"
+                  rows="5"
+                  placeholder="Tell us about your concept, text, preferred colours, and format."
+                  required
+                ></textarea>
+              </label>
+            </div>
+            <button class="primary-btn" type="submit">Send commission enquiry</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="container about-layout">
+          <div class="about-media">
+            <div class="studio-card">
+              <div class="studio-art" aria-label="Studio display artwork background"></div>
+            </div>
+          </div>
+          <div class="about-copy">
+            <p class="eyebrow">About SCRIPTORIA</p>
+            <h2>Art that speaks to memory, identity, and meaning.</h2>
+            <p>
+              SCRIPTORIA creates contemporary Arabic calligraphy art that balances raw expression with thoughtful symbolism.
+              From vibrant abstract compositions to meaningful text-based works, each piece is designed to leave a lasting impression in the spaces it inhabits.
+            </p>
+            <p>
+              The practice blends handcrafted detail, modern composition, and deeply personal storytelling — transforming calligraphy into both decor and reflection.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="order-section" id="orderSection">
+        <div class="container section-heading">
+          <div>
+            <p class="eyebrow">Place an order</p>
+            <h2>Complete your order</h2>
+          </div>
+        </div>
+
+        <div class="container order-layout">
+          <form class="order-form" id="orderForm">
+            <div class="form-grid">
+              <label>
+                Full name
+                <input type="text" name="customerName" placeholder="Your full name" required />
+              </label>
+              <label>
+                Phone / WhatsApp
+                <input type="tel" name="customerPhone" placeholder="Phone or WhatsApp number" required />
+              </label>
+            </div>
+
+            <label>
+              Delivery address
+              <textarea name="deliveryAddress" rows="4" placeholder="Street address, area, and details" required></textarea>
+            </label>
+
+            <div class="form-grid">
+              <label>
+                City / district
+                <input type="text" name="city" placeholder="Dhaka, Chattogram, etc." required />
+              </label>
+              <label>
+                Product
+                <select name="product" id="orderProduct" required></select>
+              </label>
+            </div>
+
+            <div class="form-grid">
+              <label>
+                Quantity
+                <input type="number" name="quantity" min="1" value="1" required />
+              </label>
+              <label>
+                Size / variant
+                <input type="text" name="variant" placeholder="e.g. 24 × 30 inches" />
+              </label>
+            </div>
+
+            <label>
+              Additional instructions
+              <textarea name="instructions" rows="4" placeholder="Optional notes for delivery, gifting, framing, or custom details."></textarea>
+            </label>
+
+            <div class="order-form-actions">
+              <button class="primary-btn" type="submit">Submit order enquiry</button>
+              <button class="secondary-btn send-email-btn" type="button">Send order via email</button>
+            </div>
+
+            <div class="form-status" id="formStatus" aria-live="polite"></div>
+          </form>
+
+          <aside class="order-summary" aria-live="polite">
+            <h3>Order summary</h3>
+            <div id="summaryItems"></div>
+            <div class="summary-total">
+              <span>Total</span>
+              <strong id="summaryTotal">৳0</strong>
+            </div>
+            <div class="summary-note">
+              Shipping and payment details will be confirmed after your enquiry is reviewed.
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="container contact-layout">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Reach the studio</h2>
+          </div>
+
+          <div class="contact-cards">
+            <a class="contact-card" href="https://www.instagram.com/scriptoria.art/" target="_blank" rel="noreferrer">
+              <span class="label">Instagram</span>
+              <strong>@scriptoria.art</strong>
+            </a>
+            <a class="contact-card" href="mailto:mostakimsababexe77@gmail.com">
+              <span class="label">Email</span>
+              <strong>mostakimsababexe77@gmail.com</strong>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-live="polite" aria-label="Shopping bag">
+      <div class="drawer-header">
+        <h3>Your bag</h3>
+        <button class="close-cart" type="button" id="closeCart" aria-label="Close bag">×</button>
+      </div>
+      <div class="drawer-content" id="cartItemsDrawer"></div>
+      <div class="drawer-footer">
+        <div class="subtotal-row">
+          <span>Subtotal</span>
+          <strong id="drawerSubtotal">৳0</strong>
+        </div>
+        <button class="primary-btn full-width" id="checkoutButton" type="button">Continue to order</button>
+      </div>
+    </aside>
+
+    <div class="modal-backdrop" id="productModal" aria-hidden="true">
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="close-modal" id="closeModal" type="button" aria-label="Close product modal">×</button>
+        <div class="modal-body" id="modalBody"></div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="brand-mark footer-brand">
+            <span class="brand-word">SCRIPTORIA</span>
+            <span class="brand-heart" aria-hidden="true">🖤</span>
+          </div>
+          <p class="tagline footer-tagline">Calligraphy with meaning.</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://www.instagram.com/scriptoria.art/" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="mailto:mostakimsababexe77@gmail.com">Email</a>
+          <a href="#shop">Shop</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
